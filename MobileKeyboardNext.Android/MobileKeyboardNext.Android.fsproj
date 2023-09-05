@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0-android</TargetFramework>
+        <SupportedOSPlatformVersion>30</SupportedOSPlatformVersion>
+        <ApplicationId>com.CompanyName.MobileKeyboardNext</ApplicationId>
+        <ApplicationVersion>1</ApplicationVersion>
+        <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+        <AndroidPackageFormat>apk</AndroidPackageFormat>
+        <AndroidEnableProfiledAot>False</AndroidEnableProfiledAot>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AndroidResource Include="Icon.png">
+            <Link>Resources\drawable\Icon.png</Link>
+        </AndroidResource>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="Activities.fs"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia.Skia" Version="11.0.4" />
+        <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.3.1.3" />
+<!--        <PackageReference Include="Avalonia.Android" Version="11.0.4" />-->
+        <PackageReference Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.1.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\MobileKeyboardNext\MobileKeyboardNext.fsproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Avalonia.Android">
+        <HintPath>..\..\..\clone\Avalonia-fork\src\Android\Avalonia.Android\bin\Debug\net6.0-android\Avalonia.Android.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+</Project>
