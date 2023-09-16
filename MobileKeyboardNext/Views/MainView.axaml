@@ -12,7 +12,7 @@
     <vm:MainViewModel />
   </Design.DataContext>
 <StackPanel>
-    <TextBox TextInputOptions.ReturnKeyType="Next" TextInputOptions.ContentType="Number"></TextBox>
     <TextBox TextInputOptions.ReturnKeyType="Next"></TextBox>
+    <TextBox TextInputOptions.ContentType="Number" TextInputOptions.ReturnKeyType="Next" ></TextBox>
 </StackPanel>
 </UserControl>

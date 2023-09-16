@@ -33,7 +33,7 @@
 
     <ItemGroup>
       <Reference Include="Avalonia.Android">
-        <HintPath>..\..\..\clone\Avalonia-fork\src\Android\Avalonia.Android\bin\Debug\net6.0-android\Avalonia.Android.dll</HintPath>
+        <HintPath>..\lib\Avalonia.Android.dll</HintPath>
       </Reference>
     </ItemGroup>
 </Project>
